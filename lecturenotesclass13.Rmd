@@ -1,6 +1,6 @@
 ---
 title: "Simulation-based inference - confidence intervals"
-author: ""
+author: "Ryan Lou"
 date: "March 3, 2021"
 output: html_document
 editor_options: 
