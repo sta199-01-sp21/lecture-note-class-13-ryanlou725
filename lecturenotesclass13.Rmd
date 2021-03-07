@@ -189,7 +189,7 @@ Consider 20 1-bedroom apartments that were randomly selected on
 Craigslist Manhattan from apartments listed as "by owner".
 
 ```{r data_manhattan}
-manhattan <- read_csv("~/manhattan.csv")
+manhattan <- read_csv("~/R/lecture-note-class-13-ryanlou725/manhattan.csv")
 ```
 
 Consider 3-10 day survival of mice randomized to various
@@ -250,10 +250,10 @@ Create a 95% bootstrap confidence interval for the population *mean* price of
 
 First, identify the following:
 
-- Population: 
-- Parameter of interest:
-- Sample:
-- Sample size:
+- Population: 1-bedroom apartments in Manhattan
+- Parameter of interest: population mean price
+- Sample: Bedroom apartments in Manhattan on Craigslist
+- Sample size: 20 1-bedroom apartments
 
 To create our confidence interval, we'll follow the four-step bootstrap
 scheme outlined in the slides using functions from `infer`.
@@ -329,6 +329,7 @@ get_ci(boot_means, level = 0.95)
 ```
 
 What does this mean?
+We are 95% confident that the true mean of the population lies between 2299 and 2977.
 
 **Interpretation**:
 
